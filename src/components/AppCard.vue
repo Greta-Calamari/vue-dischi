@@ -21,6 +21,16 @@ export default {
     
 }
 </script>
-<style lang="sass" scoped>
+<style lang="scss" scoped>
+h4{
+    text-transform:uppercase;
+    
+}
+img{
+    
+    box-shadow: 0 0 6px 3px rgba(#000, 0.15);
+    width: 100%;
+
+}
 
 </style>
