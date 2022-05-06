@@ -7,8 +7,8 @@ year: "1988" -->
     <div class="card">
         <img :src="item.poster" alt="">
         <h4>{{item.title}}</h4>
-        <div>{{item.author}}</div>
-        <div>{{item.year}}</div>
+        <div class="sub">{{item.author}}</div>
+        <div class="sub">{{item.year}}</div>
     </div>
 
 </template>
@@ -27,6 +27,11 @@ export default {
 .card{
     height: 200px;
     background-color: $bg-color;
+    .sub{
+    color: $text-color;
+
+
+    }
 }
 
 h4{

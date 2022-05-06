@@ -1,7 +1,7 @@
 <template>
 <div class="header">
   
-  <img src="../assets/img/spoty.icon.png" alt="" class="">
+  <img src="../assets/img/spoty.png" alt="" class="">
 
 </div>
 
