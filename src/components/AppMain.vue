@@ -11,13 +11,35 @@
 </template>
 
 <script>
-// import axios from "axios";
+import axios from "axios";
 import AppCard from './AppCard.vue'
 
 export default {
     name:"AppMain",
     components:{
         AppCard,
+    },
+    data(){
+        return{
+            diskList:[],
+            adiPath:'https:flynn.boolean.careers/exercises/api/',
+            loading:false,
+        }
+
+
+    },mounted(){
+        this.loading = true;
+        axios.get(this.adiPath + 'array/music').then((res)=>{
+            this.diskList = res.data
+            this.loading = false;
+
+        }).catch((error)=>{
+            console.log(error)
+            this.loading = false;
+           
+        })
+
+
     }
     
 }
