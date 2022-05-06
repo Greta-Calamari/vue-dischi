@@ -2,8 +2,8 @@
 <div class="container">
     <div class="row">
 
-    <div class="col-6 col-md-4 col-lg-3 gy-3" v-for="(disk,index) in diskList" :key="index">
-        <AppCard :item="disk"/>
+    <div class="col-6 col-md-4 col-lg-2 gy-3" v-for="(disk,index) in diskList" :key="index">
+        <AppCard :item ="disk"/>
     </div>
     </div>
 
@@ -26,20 +26,20 @@ export default {
         return{
             diskList:[],
             adiPath:'https:flynn.boolean.careers/exercises/api/',
-            loading:false,
+            // loading:false,
         }
 
 
     },mounted(){
-        this.loading = true;
+        // this.loading = true;
         axios.get(this.adiPath + 'array/music').then((res)=>{
             console.log(res.data)
             this.diskList = res.data
-            this.loading = false;
+            // this.loading = false;
 
         }).catch((error)=>{
             console.log(error)
-            this.loading = false;
+            // this.loading = false;
            
         })
 

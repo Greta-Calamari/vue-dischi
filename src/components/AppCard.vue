@@ -24,13 +24,18 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/vars.scss";
 
+.card{
+    height: 200px;
+    background-color: $bg-color;
+}
+
 h4{
     text-transform:uppercase;
+    color: $text-color;
     
 }
 img{
-    color: $text-color;
-    box-shadow: 0 0 6px 3px rgba(#000, 0.15);
+    
     width: 100%;
 
 }
