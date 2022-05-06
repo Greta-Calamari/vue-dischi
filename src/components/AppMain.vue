@@ -23,6 +23,15 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
+@import "../assets/style/vars.scss";
+
+.container{
+    height: 100vh;
+    background-color: $background;
+}
+
+
+
 
 </style>

@@ -22,7 +22,7 @@ export default {
 
 
 .header{
-  background-color: $background;
+  background-color: $bg-color;
 }
 
 img{
