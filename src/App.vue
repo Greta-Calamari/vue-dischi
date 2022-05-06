@@ -33,7 +33,9 @@ export default {
 main{
   background-color: $background;
   height: 100vh;
+  
 }
+  
 
 
 </style>

@@ -1,8 +1,8 @@
 <template>
-<div class="container">
+<div class="container main">
     <div class="row">
 
-    <div class="col-6 col-md-4 col-lg-2 gy-3" v-for="(disk,index) in diskList" :key="index">
+    <div class="col-6 col-md-4 col-lg-2 gy-5" v-for="(disk,index) in diskList" :key="index">
         <AppCard :item ="disk"/>
     </div>
     </div>
@@ -33,8 +33,8 @@ export default {
     },mounted(){
         // this.loading = true;
         axios.get(this.adiPath + 'array/music').then((res)=>{
-            console.log(res.data)
-            this.diskList = res.data
+            console.log(res.data.response)
+            this.diskList = res.data.response
             // this.loading = false;
 
         }).catch((error)=>{
@@ -51,6 +51,17 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/vars.scss";
+
+.main{
+    
+    background-color: $background;
+}
+
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 19.666667%;
+}
+
 
 
 

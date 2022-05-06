@@ -4,7 +4,7 @@ genre: "Rock"
 poster: "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg"
 title: "New Jersey"
 year: "1988" -->
-    <div class="card">
+    <div class="card my-5 text-center">
         <img :src="item.poster" alt="">
         <h4>{{item.title}}</h4>
         <div class="sub">{{item.author}}</div>
@@ -25,14 +25,15 @@ export default {
 @import "../assets/style/vars.scss";
 
 .card{
-    height: 200px;
+    height: 400px;
     background-color: $bg-color;
     .sub{
     color: $text-color;
-
-
     }
 }
+    
+
+
 
 h4{
     text-transform:uppercase;
@@ -41,7 +42,8 @@ h4{
 }
 img{
     
-    width: 100%;
+    width: 80%;
+    margin: 5% auto;
 
 }
 
