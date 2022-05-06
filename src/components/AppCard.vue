@@ -5,14 +5,19 @@ poster: "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jers
 title: "New Jersey"
 year: "1988" -->
     <div class="card">
-        <img src="" alt="">
-        <h4></h4>
-        <div></div>
+        <img :src="item.poster" alt="">
+        <h4>{{item.title}}</h4>
+        <div>{{item.author}}</div>
+        <div>{{item.year}}</div>
     </div>
 
 </template>
 <script>
 export default {
+    name:'AppCard',
+    props:{
+        item:Object,
+    }
     
 }
 </script>
