@@ -22,12 +22,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "../assets/style/vars.scss";
+
 h4{
     text-transform:uppercase;
     
 }
 img{
-    
+    color: $text-color;
     box-shadow: 0 0 6px 3px rgba(#000, 0.15);
     width: 100%;
 
