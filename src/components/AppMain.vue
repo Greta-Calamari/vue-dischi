@@ -52,10 +52,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/vars.scss";
 
-.container{
-    height: 100vh;
-    background-color: $background;
-}
+
 
 
 
