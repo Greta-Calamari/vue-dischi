@@ -69,7 +69,7 @@ export default {
             return this.diskList;
         }
         return this.diskList.filter((item)=>{
-            return item.generes === this.searchText;
+            return item.genre === this.searchText;
         })
         }
 
