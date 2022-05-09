@@ -1,10 +1,11 @@
 <template>
     <div>
-        <select name="" id="" v-model="inputText" @click="search">
+        <select name="" id="" v-model="inputText" @change="changeSearch">
             <option value="">All</option>
             <option :value="genre" v-for="genre in MusicGeneres" :key="genre">{{genre}}</option>
 
         </select>
+        
 
     </div>
 </template>
