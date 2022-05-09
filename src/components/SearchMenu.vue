@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select name="" id="" v-model="inputText" @change="changeSearch">
+        <select name="" id="" v-model="inputText" @change="search">
             <option value="">All</option>
             <option :value="genre" v-for="genre in MusicGeneres" :key="genre">{{genre}}</option>
 

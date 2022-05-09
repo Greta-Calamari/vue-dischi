@@ -3,7 +3,7 @@
     <SearchMenu @mySearch="setSearchText" :MusicGeneres="genre"/>
     <div class="row">
 
-    <div class="col-6 col-md-4 col-lg-2 gy-5" v-for="(disk,index) in diskList" :key="index">
+    <div class="col-6 col-md-4 col-lg-2 gy-5" v-for="(disk,index) in filteredMenu" :key="index">
         <AppCard :item ="disk"/>
     </div>
     </div>
@@ -61,6 +61,7 @@ export default {
     },methods:{
         setSearchText(txt){
             this.searchText = txt;
+            console.log('setSearchText',txt)
 
         }
     },computed:{
